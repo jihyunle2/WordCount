@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <head>
+        <title>Wordcount by JH</title>
+    
+        <!-- Google Fonts -->   
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+
+        <!-- Main Stylesheet File -->
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'style.css' %}" >
+
+        <!-- Icon File -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <style type="text/css">
+            A:link{text-decoration: none; color:#646464;}
+            A:visited{text-decoration: none; color:#646464;}
+            A:active{text-decoration: none; color:#646464;}
+            A:hover{text-decoration: none; color:#646464;}
+        </style>
+    </head>
+    <body>
+        <div class="container bck-img">
+            <h1>About Wordcount </h1>
+            <a href="{% url 'home' %}"> <h3>BACK</h3> </a>
+        </div>
+        <div class="about">
+            <div class="t1">
+                <div>
+                    <i class="fas fa-child fa-3x"></i>
+                </div>
+            </div>
+            <div class="t2">
+                <div>
+                    <i class="far fa-calendar-alt fa-3x"></i>
+                </div>
+            </div>
+            <div class="t3">
+                <div>
+                    <i class="fas fa-question fa-3x"></i>
+                </div>
+            </div>
+            <div class="t4">
+                <div>
+                    <h4>WHO</h4>
+                    <p>한국외국어대학교에 재학중인 이지현 학생이 과제용으로 <br>만든 페이지입니다.</p>
+                </div>
+            </div>
+            <div class="t5">
+                <div>
+                    <h4>WHEN</h4>
+                    <p>2019년 4월 7일 일요일에 완료했습니다</p>
+                </div>
+            </div>
+            <div class="t6">
+                <div>
+                    <h4>WHAT</h4>
+                    <p>입력한 단어의 개수를 세 주는 편리한 사이트입니다.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+            <div class="footer-area-bottom">
+                <div class="copyright text-center">
+                    <p>
+                        <a href="{% url 'home' %}"> HOME</a> &nbsp;&nbsp;&nbsp; <a href="/about">ABOUT</a>
+                    </p>
+                </div>
+                <div class="credits">
+                    <p style="font-size: 10px">Made by Jihyun</p>
+                </div>
+            </div>        
+    </footer>
+</html>
